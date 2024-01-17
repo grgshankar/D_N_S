@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main_color: #023369;
+    --section_title: #DBE5EF;
+    --orange: #EC8E1F;           
+}
+body{
+/*    background: var(--main_color);*/
+}
