@@ -7,7 +7,7 @@ function initJs($) {
 		// Testimonial
 		$('.main_banner').owlCarousel({
 			loop:true,
-			margin:40,
+			margin:0,
 			nav:true,
 			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 			autoplay: false	,
@@ -20,6 +20,16 @@ function initJs($) {
 			}
 		});
 	}),
+
+	(this.customContainerFinder = function(){
+		$(window).on('load resize scroll', function(){
+			var winWidth = $(window).innerWidth();
+			var containerWidth = $('.container').innerWidth();
+			var totalSubtractedWidth = winWidth-containerWidth;
+			var totalDividedWidth = totalSubtractedWidth/2;
+			$('.main_banner .main_content_wrap .content_wrap').css('left', totalDividedWidth+"px");
+		})
+	})
 
 (this.tabJs = function(){
 	$('ul.tabs li').click(function(){
@@ -43,6 +53,7 @@ function initJs($) {
 (this.initMain = function() {
 	let _this = this;
 	_this.owlCarouselJs();
+	_this.customContainerFinder();
     
 
 });
