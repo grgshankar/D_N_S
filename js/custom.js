@@ -29,7 +29,13 @@ function initJs($) {
 			var totalDividedWidth = totalSubtractedWidth/2;
 			$('.main_banner .main_content_wrap .content_wrap').css('left', totalDividedWidth+"px");
 		})
-	})
+	}),
+
+	(this.expandPopupJs = function(){
+		$("#popup_main_holder .popup_link").on('click', function(){
+			
+		});
+	}),
 
 (this.tabJs = function(){
 	$('ul.tabs li').click(function(){
