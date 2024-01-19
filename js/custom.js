@@ -4,7 +4,7 @@
 **/
 function initJs($) {
 	(this.owlCarouselJs = function() {
-		// Testimonial
+		// main_banner
 		$('.main_banner').owlCarousel({
 			loop:true,
 			margin:0,
@@ -16,6 +16,30 @@ function initJs($) {
 			responsive:{
 				0:{
 					items:1,
+				},
+			}
+		});
+
+		// partner slider
+		$('.partner_slider').owlCarousel({
+			loop:true,
+			margin:10,
+			nav:true,
+			autoplay: true,
+			autoplayTimeout:3000,
+			smartSpeed: 1000,
+			responsive:{
+				0:{
+					items:1,
+				},
+				992:{
+					items:2,
+				},
+				1280:{
+					items:3,
+				},
+				1366:{
+					items:5,
 				},
 			}
 		});
