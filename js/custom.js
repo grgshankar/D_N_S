@@ -45,22 +45,6 @@ function initJs($) {
 		});
 	}),
 
-	(this.customContainerFinder = function(){
-		$(window).on('load resize scroll', function(){
-			var winWidth = $(window).innerWidth();
-			var containerWidth = $('.container').innerWidth();
-			var totalSubtractedWidth = winWidth-containerWidth;
-			var totalDividedWidth = totalSubtractedWidth/2;
-			$('.main_banner .main_content_wrap .content_wrap').css('left', totalDividedWidth+"px");
-		})
-	}),
-
-	(this.expandPopupJs = function(){
-		$("#popup_main_holder .popup_link").on('click', function(){
-			
-		});
-	}),
-
 (this.tabJs = function(){
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
@@ -83,7 +67,6 @@ function initJs($) {
 (this.initMain = function() {
 	let _this = this;
 	_this.owlCarouselJs();
-	_this.customContainerFinder();
     
 
 });
