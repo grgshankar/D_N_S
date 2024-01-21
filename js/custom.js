@@ -24,8 +24,8 @@ function initJs($) {
 		$('.partner_slider').owlCarousel({
 			loop:true,
 			margin:10,
-			nav:true,
-			autoplay: true,
+			nav:false,
+			autoplay: false,
 			autoplayTimeout:3000,
 			smartSpeed: 1000,
 			responsive:{
