@@ -1199,7 +1199,6 @@ section.board-member .page-h {
 
 /* our story */
 section.bread-crumb-banner {
-    background-image: linear-gradient(rgb(9 26 46 / 91%), rgb(9 26 46 / 95%)), url(../images/banner_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1207,6 +1206,16 @@ section.bread-crumb-banner {
     height: 319px;
     align-items: center;
     display: flex;
+    position: relative;
+}
+section.bread-crumb-banner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 51, 105, 0.84);
 }
 
 section.bread-crumb-banner strong {
